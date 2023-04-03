@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="First.css">
+    <title>Attendance Syatem</title>
+</head>
+<body>
+    <head>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a class="reg" href="LoginPage.html">Faculty Registration</a>
+            <a class="streg" href="Student.html">Student Registration</a>
+            <img class="logo" src="logo.jpg" alt="Trulli" width="76" height="68.2">
+        </div>
+    </head>
+
+    <div class="Form">
+        <form>
+            
+            <div>
+              <label for="facultyName">Full Name:</label>
+              <input type="text" id="facultyName" name="facultyName" required>
+            </div>
+            <div>
+              <label for="batch">Batch:</label>
+              <select id="batch" name="batch" required>
+                <option value="Batch-A">Batch-A</option>
+                <option value="Batch-B">Batch-B</option>
+                <option value="Batch-C">Batch-C</option>
+                <option value="Batch-D">Batch-D</option>
+                <option value="Batch-E">Batch-E</option>
+                <option value="Batch-F">Batch-F</option>
+              </select>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="checkbox">
+                <div >
+                  <input type="radio" id="student" name="userType" value="student" required>
+                  <label for="student">Student</label>
+                </div>
+                <div>
+                  <input type="radio" id="faculty" name="userType" value="faculty" required>
+                  <label for="faculty">Faculty</label>
+                </div>
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
+                </div>
+          </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const formContainer = document.querySelector("Form");
+        formContainer.style.display = "block";
+        formContainer.style.animation = "fadeIn 1s ease-out";
+      });      
+    </script>
+
+    
+</body>
+</html>
